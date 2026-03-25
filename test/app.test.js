@@ -15,29 +15,3 @@ test('backend status is running', () => {
     const config = { status: 'running' };
     assert.strictEqual(config.status, 'running');
 });
-```
-
----
-
-## Final Structure After Adding Files
-```
-frontend/
-├── src/
-│   └── index.js      ← ADD
-├── test/
-│   └── app.test.js   ← already there
-├── package.json      ← ADD
-└── README.md
-
-backend/
-├── src/
-│   └── index.js      ← ADD
-├── test/
-│   └── app.test.js   ← ADD
-├── package.json      ← ADD
-└── README.md
-
-deployer/
-├── Jenkinsfile       ← already there ✅
-├── versions.json     ← already there ✅
-└── README.md
